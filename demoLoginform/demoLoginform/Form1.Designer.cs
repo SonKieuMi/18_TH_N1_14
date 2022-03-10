@@ -31,6 +31,8 @@ namespace demoLoginform
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txtusername = new System.Windows.Forms.TextBox();
+            this.txtpass = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -49,11 +51,29 @@ namespace demoLoginform
             this.txtusername.Size = new System.Drawing.Size(260, 38);
             this.txtusername.TabIndex = 1;
             // 
+            // txtpass
+            // 
+            this.txtpass.Location = new System.Drawing.Point(205, 248);
+            this.txtpass.Name = "txtpass";
+            this.txtpass.Size = new System.Drawing.Size(260, 38);
+            this.txtpass.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(49, 254);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(139, 32);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Password";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtpass);
             this.Controls.Add(this.txtusername);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
@@ -67,6 +87,8 @@ namespace demoLoginform
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtusername;
+        private System.Windows.Forms.TextBox txtpass;
+        private System.Windows.Forms.Label label2;
     }
 }
 
